@@ -1,0 +1,19 @@
+{
+  "name": "bitbucket-hook-test",
+  "version": "0.0.1",
+  "description": "bitbucket hook test server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustyoo86/bitbucket-hook-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trustyoo86/bitbucket-hook-test/issues"
+  },
+  "homepage": "https://github.com/trustyoo86/bitbucket-hook-test#readme"
+}
