@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/trustyoo86/bitbucket-hook-test/issues"
   },
-  "homepage": "https://github.com/trustyoo86/bitbucket-hook-test#readme"
+  "homepage": "https://github.com/trustyoo86/bitbucket-hook-test#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0"
+  }
 }
