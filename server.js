@@ -7,7 +7,8 @@ const express = require('express');
 const app = express();
 
 app.post('/hook', (req, res) => {
-  console.log('req', req);
+  const { body } = req;
+  console.log('req', body);
   res.send({ msg: 'success' });
 });
 
