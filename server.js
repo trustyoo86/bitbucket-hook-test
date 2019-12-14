@@ -6,8 +6,6 @@ const express = require('express');
 
 const app = express();
 
-http.createServer(app, (req, res) => {
-  if (req.method === 'POST') {
-    console.log('POST received!', req);
-  }
+app.listen(80, () => {
+  console.log('hook server listen in 80');
 });
