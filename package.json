@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i --no-package-lock && pm2 startOrRestart ./server.js"
+    "start:test": "nodemon server",
+    "start": "npm i --no-package-lock && pm2 startOrRestart server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "nodemon": "^2.0.4"
   }
 }
