@@ -16,6 +16,6 @@ app.post('/hook', (req, res) => {
   res.send({ msg: 'success' });
 });
 
-app.listen(80, () => {
+app.listen(3000, () => {
   console.log('hook server listen in 80');
 });
