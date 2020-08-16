@@ -6,7 +6,7 @@ const { IncomingWebhook } = require('ms-teams-webhook');
 // modules
 const urls = require('./urls');
 
-class Development() {
+class Development {
   constructor() {
     this.webhook = new IncomingWebhook(urls['development']);
   }
@@ -28,3 +28,5 @@ class Development() {
     }));
   }
 }
+
+module.exports = Development;
