@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded());
 
 app.post('/hook', (req, res) => {
   const { body } = req;
+  console.log('request body =>', body);
   const { pullrequest } = body;
   res.send({ msg: 'success' });
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:test": "nodemon server",
-    "start": "npm i --no-package-lock && pm2 startOrRestart server"
+    "start": "npm i --no-package-lock && pm2 startOrRestart ./server/index.js"
   },
   "repository": {
     "type": "git",
