@@ -22,7 +22,7 @@ app.post('/hook', (req, res) => {
   const { body } = req;
   console.log('request body =>', body);
   const { pullrequest } = body;
-  devWebhook.send();
+  devWebhook.send(pullrequest);
   res.send({ msg: 'success' });
 });
 
