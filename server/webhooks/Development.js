@@ -11,17 +11,21 @@ class Development {
     this.webhook = new IncomingWebhook(urls['development']);
   }
 
-  async send() {
+  async send(body) {
+    const { title, destination } = body;
+
+    const { repository } = destination;
+
     await this.webhook.send(JSON.stringify({
       '@type': 'Test',
       '@context': 'https://schema.org/extensions',
       'summary': 'test!!!',
       'themeColor': '0078D7',
-      'title': 'PR Open!!',
+      title: `${state}`,
       'sections': [
         {
-          'activityTitle': '테스트',
-          'activitySubtitle': '2020-08-11 11:46pm',
+          'activityTitle': title,
+          'activitySubtitle': new Date(body.update_on),
           'text': 'test text!!!',
         },
       ],
