@@ -12,7 +12,7 @@ class Development {
   }
 
   async send(body) {
-    const { title, destination } = body;
+    const { title, destination, state } = body;
 
     const { repository } = destination;
 
