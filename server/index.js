@@ -10,6 +10,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
+app.get('/', (req, res) => {
+  res.end('hello world!');
+});
+
 app.post('/hook', (req, res) => {
   const { body } = req;
   console.log('request body =>', body);
