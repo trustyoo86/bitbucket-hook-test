@@ -7,6 +7,10 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const Development = require('./webhooks/Development');
+
+const devWebhook = new Development();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
@@ -18,6 +22,7 @@ app.post('/hook', (req, res) => {
   const { body } = req;
   console.log('request body =>', body);
   const { pullrequest } = body;
+  devWebhook.send();
   res.send({ msg: 'success' });
 });
 
