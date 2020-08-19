@@ -7,9 +7,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-const Development = require('./webhooks/Development');
+const Webhook = require('./webhooks/Webhook');
 
-const devWebhook = new Development();
+const webhook = new Webhook();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
